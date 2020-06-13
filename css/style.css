@@ -1,0 +1,705 @@
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+	url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	src: url("../fonts/roboto-v20-latin-500.woff2") format("woff2"),
+	url("../fonts/roboto-v20-latin-500.woff") format("woff");
+}
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/roboto-v20-latin-700.woff2") format("woff2"),
+	url("../fonts/roboto-v20-latin-700.woff") format("woff");
+}
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body{
+	font-family: "Roboto", "Arial", sans-serif ;
+
+}
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+.header__nav{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px auto;
+}
+.section__list{	
+	display: flex;
+	list-style-type: none;
+}
+.section__item a{
+	text-decoration: none;
+	padding: 8px;
+	margin: 2px;
+	color:#888;
+}
+.section__item a:hover{
+	border-bottom: 1px solid grey;
+}
+.section__input {
+	border: none;
+	border-bottom: 1px solid grey;
+	margin: 2px;
+	padding: 10px;
+}
+
+.header__list{
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.header__link{
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color:#222;
+}
+.reverse{
+	display: flex;
+	align-items: center;
+}
+.main__section-one{
+	background-image: url("../img/watches.jpg");
+	background-repeat: no-repeat;
+	background-position: right -160px center;
+	background-size: 450px;
+	border-bottom: 1px solid grey;
+	margin-bottom: 30px;	
+}
+.section__one-info-part{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 170px;	
+}
+.main__section-one-heading{
+	font-size: 35px;
+}
+.main__section-one-paragraph{
+	width: 450px;
+	border-left: 1px solid grey;
+	padding-left: 20px;
+	font-size: 15px;
+	color: grey;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+.main__section-one-link{
+	width: 200px;
+	background-color: tomato;
+	text-decoration: none;
+	color:#fff;
+}
+.section__two-info{
+	display: flex;
+	margin-bottom: 40px;	
+}
+.section-two__text-wrapper{
+	width: 320px;
+	margin-right: 20px;
+}
+.section-two__text-heading{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	color: #222;
+}
+.section-two__text{
+	color: #555;
+	line-height: 25px;
+}
+.link{
+	background-color: tomato;
+	color:#fff;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px;
+	text-align: center;
+	opacity: 0.8;
+}
+.link:hover{
+	opacity: 1;
+}
+.section-two__link{
+	background-color: #fff;
+	color: tomato;
+	font-weight: 700;
+	padding: 0;
+}
+.section-two__link::before {
+	display:inline-block;
+	height:2px;
+	width: 30px;
+	background-color: tomato;
+	vertical-align: middle;
+	margin-right: 15px;
+	transition: 0.2s ease;
+	content: "";
+}
+.section-two__link:hover::before{
+	width: 40px;
+}
+.section-two__item-info{
+	display: flex;
+	justify-content: space-between;
+}
+.section__item-info{
+	width: 370px;
+	align-self: center;
+	margin-bottom: 70px;	
+}
+.section-two__heading{
+	width: 250px;
+	font-size: 30px;
+	margin-bottom: 50px;
+	text-align: left;
+}
+.section-two__paragraph{
+	color: grey;
+	line-height: 22px;
+	border-left: 1px solid grey;
+	padding-left: 20px;
+}
+.section__img{
+	width: 400px;	
+	height: 500px;	
+}
+.footer{
+	background-image: url("../img/runners.jpg");
+	background-size: cover;
+	background-position: center center ;
+	background-repeat: no-repeat;
+	padding-bottom: 200px;
+	margin-top: 30px;
+}
+.footer-data{
+	width: 455px;
+	padding-top: 110px;	
+	color: #fff;
+	margin-left:  auto;
+}
+.footer-heading{
+	font-size: 30px;	
+	margin: 0;	
+	font-weight: 700;	
+}
+.footer-text{
+	margin: 20px 0 40px;	
+	color: #fff;
+	border-left: 1px solid #fff;
+	padding-left: 20px;
+	line-height: 20px;
+}
+@media (max-width: 1024px) {
+	.container{
+		width: 980px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}	
+	.header__nav{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		padding: 0 20px;
+		margin-top: 5px;
+	}
+	.section__item{
+		margin: 5px;
+	}
+	.media__reverse{
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+	.main__section-one{
+		background-image: url("../img/watches.jpg");
+		background-repeat: no-repeat;
+		background-position: right -90px bottom 100px ;
+		background-size: 400px;
+		border-bottom: 1px solid grey;
+		margin-bottom: 30px;	
+	}
+	.section__list{
+		display: flex;
+		flex-direction: column;	
+		text-align: center;
+		padding: 0;
+	}
+	.section__item {
+		text-decoration: none;
+		margin-bottom: 5px;
+		color:#888;
+	}
+	.main__section-one-paragraph{
+		width: 350px;
+		border-left: 1px solid grey;
+		padding-left: 20px;
+		font-size: 15px;
+		color: grey;
+		line-height: 20px;
+		margin-bottom: 50px;
+	}
+	.section__item-info{
+		align-self: center;
+		margin-bottom: 70px;	
+	}
+	.section-two__heading{
+		width: 250px;
+		font-size: 30px;
+		margin-bottom: 50px;
+		text-align: left;
+	}
+	.section-two__paragraph{
+		width: 250px;	
+		color: grey;
+		line-height: 20px;
+		border-left: 1px solid grey;
+		padding-left: 20px;
+		margin-bottom: 50px;	
+	}
+	.section-two__item-info{
+		position: relative;
+	}
+	.section__img{
+		position: absolute;
+		top: 30px;
+		right: 100px;
+		width: 300px;	
+		height: 400px;	
+	}
+
+	.footer{
+		background-image: url("../img/runners.jpg");
+		background-size: 1400px;
+		background-position: center center ;
+		background-repeat: no-repeat;
+		padding-bottom: 280px;
+		margin-top: 30px;
+	}
+	.footer-info__part{
+		width: 350px;
+		padding-top: 180px;	
+		color: #fff;
+		margin-left: auto;	
+	}
+	.footer-heading{
+		font-size: 30px;	
+		font-weight: 700;	
+	}
+	.footer-text{
+		margin: 40px 0;	
+		color: #fff;
+		border-left: 1px solid #fff;
+		padding-left: 20px;
+		line-height: 20px;
+	}
+	.section-two__link{
+		text-decoration: none;	
+	}
+	.link{
+		background-color: tomato;
+		color:#fff;
+		text-decoration: none;
+		font-size: 14px;
+		padding: 10px;
+		text-align: center;
+		line-height: 20px;
+		opacity: 1;
+	}
+}
+@media (max-width: 768px) {
+	.container{
+		width: 720px;
+		padding: 20px;			
+	}	
+	.main__section-one{
+		background-position: right -100px bottom 180px ;
+		background-size: 300px;
+	}
+	.section-two__text-wrapper{
+		text-align: center;	
+	}
+	.main__section-one-paragraph{
+		width: 300px;		
+		border-left: 1px solid grey;
+		padding-left: 20px;
+		font-size: 15px;
+		color: grey;
+		line-height: 20px;
+		margin-bottom: 50px;
+	}
+	.section__two-info{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: justify;
+		margin-bottom: 40px;	
+	}
+	.section-two__item-info{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 50px;	
+	}
+	.section-two__link::before{
+		display: none;
+	}
+	.section__item-info{
+		align-self: center;
+		margin-bottom: 70px;	
+	}
+	.section-two__heading{
+		width: 350px;
+		font-size: 30px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+	.section-two__paragraph{
+		width: 380px;	
+		color: #F0F0F0;
+		border-left: none;
+		font-size: 20px;	
+		background-color: rgba(0,0,0,0.4);
+		padding-top: 5px;	
+		padding-bottom: 5px;	
+	}
+	.section__img{
+		z-index: -1;
+		left: 130px;
+		right: 0;
+		top: 0;
+		bottom: 0;	
+		width: 420px;	
+		height: 480px;
+	}
+	.footer{
+		background-image: url("../img/runners.jpg");
+		background-size: 1400px;
+		background-position: center center ;
+		background-repeat: no-repeat;
+		padding-bottom: 280px;
+		margin-top: 30px;
+	}
+	.footer-data{
+		text-align: center;
+		margin: 0 auto;	
+		background-color: rgba(0,0,0,0.6);
+		margin-top: 100px;	
+		padding: 0;	
+		padding-bottom: 20px;	
+		padding-top: 20px;	
+	}
+	.footer-info__part{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		color: #fff;
+	}
+	.footer-heading{
+		font-size: 30px;	
+		font-weight: 700;	
+	}
+	.footer-text{
+		border-left: none;
+		padding: 20px;
+		line-height: 20px;
+	}
+	.section-two__link{
+		text-decoration: none;	
+	}
+	.link{
+		background-color: tomato;
+		color:#fff;
+		text-decoration: none;
+		font-size: 14px;
+		padding: 10px;
+		text-align: center;
+		opacity: 1;
+	}
+}
+@media (max-width: 425px) {
+	.container{
+		width: 400px;
+		padding: 10px;			
+	}	
+	.section__one-info-part{
+		margin: 0 auto;	
+		text-align: center;
+	}
+	.main__section-one{
+		background-image: none;
+	}
+	.main__section-one-paragraph{
+		margin: 0 auto;			
+		border-left:none;
+	}
+	.main__section-one-link{
+		margin: 0 auto;	
+		margin-top: 10px;	
+		margin-bottom: 10px;	
+		padding: 2px;	
+	}
+	.link{
+		background-color: tomato;
+		color:#fff;
+		text-decoration: none;
+		font-size: 14px;
+		padding: 10px;
+		text-align: center;
+		opacity: 1;
+	}
+	.section-two__heading{
+		width: 350px;
+		font-size: 30px;
+		margin-bottom: 50px;
+	}
+	.section-two__paragraph{
+		width: 350px;	
+		color: #F0F0F0;
+		border-left: none;
+		font-size: 20px;	
+		background-color: rgba(0,0,0,0.4);
+		padding-top: 5px;	
+		padding-bottom: 5px;	
+		margin-bottom: 20px;	
+	}
+	.section__link{
+		width: 85px;	
+		display: flex;
+		margin: 0 auto;	
+	}
+	.section__img{
+		z-index: -1;
+		left: 0px;
+		right: 0;
+		top: 0;
+		bottom: 0;	
+		width: 380px;	
+		height: 450px;
+	}
+	.footer-data{
+		width: 380px;	
+		text-align: center;
+		margin: 0 auto;	
+		background-color: rgba(0,0,0,0.6);
+		margin-top: 100px;	
+		padding: 0;	
+		padding-bottom: 20px;	
+		padding-top: 20px;	
+	}
+	.footer-info__part{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		color: #fff;
+	}
+	.footer-heading{
+		width: 380px;	
+		font-size: 22px;	
+		font-weight: 700;	
+		text-align: center;		
+	}
+	.footer-text{
+		width: 380px;	
+		color: #fff;
+		border-left: none;
+		padding: 20px;
+		line-height: 20px;
+		margin: 0;	
+	}
+	.footer-link{
+		display: block;
+		width: 150px;	
+		margin: 0 auto;	
+	}
+}
+@media (max-width: 375px) {
+	.container{
+		width: 350px;
+		padding: 10px;			
+	}	
+	.section__one-info-part{
+		margin: 0 auto;	
+		text-align: center;
+	}
+	.main__section-one{
+		background-image: none;
+	}
+	.main__section-one-paragraph{
+		margin: 0 auto;			
+		border-left:none;
+	}
+	.main__section-one-link{
+		margin: 0 auto;	
+		margin-top: 10px;	
+		margin-bottom: 10px;	
+		padding: 2px;	
+	}
+	.link{
+		background-color: tomato;
+		color:#fff;
+		text-decoration: none;
+		font-size: 14px;
+		padding: 10px;
+		text-align: center;
+		opacity: 1;
+	}
+	.section-two__heading{
+		width: 320px;
+		font-size: 30px;
+		margin: 0 auto;	
+		margin-bottom: 30px;
+	}
+	.section-two__paragraph{
+		width: 320px;	
+		border-left: none;
+		font-size: 20px;	
+		padding-top: 5px;	
+		padding-bottom: 5px;	
+		margin: 0 auto;	
+		margin-bottom: 20px;	
+	}
+	.section__link{
+		width: 85px;	
+		display: flex;
+		margin: 0 auto;	
+	}
+	.section__img{
+		z-index: -1;
+		left: 0px;
+		right: 0;
+		top: 0;
+		bottom: 0;	
+		width: 350px;	
+		height: 450px;
+	}
+	.footer-data{
+		width: 330px;	
+	}
+	.footer-heading{
+		width: 330px;	
+		font-size: 22px;	
+		font-weight: 700;	
+		text-align: center;		
+	}
+	.footer-text{
+		width: 330px;	
+		color: #fff;
+		border-left: none;
+		padding: 20px;
+		line-height: 20px;
+		margin: 0;	
+	}
+	.footer-link{
+		display: block;
+		width: 150px;	
+		margin: 0 auto;	
+	}
+}
+@media (max-width: 320px) {
+	.container{
+		width: 300px;
+		padding: 10px;			
+		overflow: hidden;
+	}	
+	.main__section-one-paragraph{
+		width: 280px;	
+		padding: 0;	
+		margin: 0 auto;			
+	}
+	.main__section-one-link{
+		margin: 0 auto;	
+		margin-top: 10px;	
+		margin-bottom: 10px;	
+		padding: 2px;	
+	}
+	.link{
+		background-color: tomato;
+		color:#fff;
+		text-decoration: none;
+		font-size: 14px;
+		padding: 10px;
+		text-align: center;
+		opacity: 1;
+	}
+	.section-two__text{
+		width: 280px;	
+		margin: 10px auto;	
+	}
+	.section-two__heading{
+		width: 280px;
+		font-size: 30px;
+		margin: 0 auto;	
+		margin-bottom: 30px;
+	}
+	.section-two__paragraph{
+		width: 260px;	
+		padding: 0;	
+		text-align: center;
+		margin: 0 auto;	
+		margin-bottom: 10px;	
+		padding: 10px 0;	
+	}
+	.section__link{
+		width: 85px;	
+		display: flex;
+		margin: 0 auto;	
+	}
+	.section__img{
+		z-index: -1;
+		left: -9px;
+		right: 0;
+		top: 0;
+		bottom: 0;	
+		width: 350px;	
+		height: 450px;
+	}
+	.footer-data{
+		width: 280px;	
+	}
+	.footer-heading{
+		width: 280px;	
+		text-align: center;		
+	}
+	.footer-text{
+		width: 280px;	
+		color: #fff;
+		border-left: none;
+		padding: 20px;
+		line-height: 20px;
+		margin: 0;	
+	}
+	.footer-link{
+		display: block;
+		width: 150px;	
+		margin: 0 auto;	
+	}
+	.footer{
+		background-size: 1000px;
+		padding-bottom: 50px;
+		margin: 0;	
+	}
+}
